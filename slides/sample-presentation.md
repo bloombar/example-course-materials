@@ -214,7 +214,7 @@ name: github-classroom
 
 ## Concept
 
-GitHub also includes a feature called **Classroom** for educators to share assignments with students.
+GitHub also includes a feature called **[Classroom](https://classroom.github.com)** for educators to create and share assignments with students.
 
 --
 
@@ -230,15 +230,17 @@ GitHub also includes a feature called **Classroom** for educators to share assig
 
 ---
 
-template: github-pages
+template: github-classroom
 
 ## Example
 
-I have set up this repository itself as an assignment in GitHub Classroom.
+Tnis repository itself is set up as an assignment using GitHub Classroom.
 
-- Click [this link](https://classroom.github.com/a/3PHuVk8D) to accept it!
+- Accept this assignment by clicking [this link](https://classroom.github.com/a/3PHuVk8D)!
 
 - Feel free to turn on [GitHub Pages](#github-pages) on your copy and modify the files any way you wish.
+
+- See your changes published live within a minute or two.
 
 ---
 
@@ -246,6 +248,20 @@ name: conclusions
 
 # Conclusions
 
-```
+--
 
-```
+## Extensibility
+
+This type of course materials setup is just the beginning.
+
+- There are many additional tools and features that can be integrated into the setup outlined in this presentation.
+
+- For example, [GitHub Actions](https://github.com/marketplace?type=actions) can be used to automatically run any program when a student changes their repository files, such as auto-grading it or logging their changes into a spreadsheet.
+
+---
+
+template: conclusions
+
+## Thank you
+
+Bye!
