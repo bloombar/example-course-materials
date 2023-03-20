@@ -17,7 +17,7 @@ How this example course setup works...
 1. [Remark.js](#remark.js)
 1. [GitHub](#github)
 1. [GitHub Pages](#github-pages)
-1. [GitHub Classroom](#github-pages)
+1. [GitHub Classroom](#github-classroom)
 1. [Conclusions](#conclusions)
 
 ---
@@ -194,9 +194,51 @@ GitHub includes a featured called **Pages** that allows you to automatically pub
 
 ---
 
+template: github-pages
+
+## Published site
+
+Once enabled, the site will be published and republished automatically every time you change the Markdown.
+
+- The link to the published site will appear on the page within a minute or two.
+
+  ![Published site](../assets/sample-presentation/github-pages-link.png)
+
+---
+
 name: github-classroom
 
 # GitHub Classroom
+
+--
+
+## Concept
+
+GitHub also includes a feature called **Classroom** for educators to share assignments with students.
+
+--
+
+- Assignments can be generated from any GitHub repository. The instructor can include any starter files, instructions (written in Markdown), etc, in their original copy of the repository.
+
+--
+
+- When students "_accept_" the assignment, they are given their own copy of the repository.
+
+--
+
+- GitHub Classroom allows the instructor to easily see an archive and log of all the changes each student has made to the files in their repository.
+
+---
+
+template: github-pages
+
+## Example
+
+I have set up this repository itself as an assignment in GitHub Classroom.
+
+- Click [this link](https://classroom.github.com/a/3PHuVk8D) to accept it!
+
+- Feel free to turn on [GitHub Pages](#github-pages) on your copy and modify the files any way you wish.
 
 ---
 
