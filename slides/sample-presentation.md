@@ -190,7 +190,7 @@ GitHub includes a featured called **Pages** that allows you to automatically pub
 
 - This feature can be turned on for any repository in its `Settings` page.
 
-  ![Settings page](../assets/sample-presentation/settings-page.png)
+  ![Settings page](../assets/sample-presentation/github-pages-setup.png)
 
 ---
 

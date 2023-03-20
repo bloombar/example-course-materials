@@ -1,8 +1,8 @@
 github-org-name: bloombar
 github-repo-name: example-course-materials
 repository: bloombar/example-course-materials
-url: https://your_course_website.something.com
-baseurl: ""
+url: https://bloombar.github.io
+baseurl: "/example-course-materials"
 permalink: pretty
 title: Example Course Materials
 description: >
