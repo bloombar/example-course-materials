@@ -262,6 +262,8 @@ This type of course materials setup is just the beginning.
 
 - For example, [GitHub Actions](https://github.com/marketplace?type=actions) can be used to automatically run any program when a student changes their repository files, such as auto-grading it or logging their changes into a spreadsheet.
 
+- And you can, of course, customize the appearance of the slides and course materials by modifying the files in the `theme` directory.
+
 ---
 
 template: conclusions
