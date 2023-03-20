@@ -1,0 +1,31 @@
+github-org-name: bloombar
+github-repo-name: example-course-materials
+repository: bloombar/example-course-materials
+url: https://your_course_website.something.com
+baseurl: ""
+permalink: pretty
+title: Example Course Materials
+description: >
+  This site contains a somewhat organized collection of notes, mostly prepared for courses I have taught. Agile development & Devops, Software Engineering, Database Design, Web Design, Computer Programming, Computer Science, Physical Computing. Take a look.
+page-categories: [course-notes]
+copyright: GNU General Public License, Version 3
+layouts_dir: theme/_layouts/
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: github
+  - scope:
+      path: "**/slides"
+    values:
+      categories: [course-notes]
+      layout: presentation
+  - scope:
+      path: "**/notes"
+    values:
+      layout: github
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-seo-tag

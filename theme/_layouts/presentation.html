@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% seo %}
+
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl | strip_html }}/theme/css/presentation.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ site.baseurl | strip_html }}/theme/favicon.ico"
+    />
+  </head>
+  <body>
+    <header class="slides">
+      <!-- breadcrumb -->
+      <small>
+        <a href="{{ site.baseurl | strip_html }}/">
+          <!-- {{ site.github-org-name }} -->
+          {{ site.github-repo-name | strip_html }}
+        </a>
+
+        {% if page.collection != "" and page.collection != nil %} /
+        <a
+          href="{{ site.baseurl | strip_html }}/{{ page.collection | downcase | strip_html }}"
+        >
+          {{ page.collection | downcase | strip_html }}
+        </a>
+        {% else %} {% for category in page.categories %} /
+        <a
+          href="{{ site.baseurl | strip_html }}/{{ category | downcase | strip_html }}"
+        >
+          {{ category | downcase | strip_html }}
+        </a>
+        {% unless forloop.last %} {% endunless %} {% endfor %} {% endif %}
+      </small>
+      <!-- // breadcrumb -->
+    </header>
+    <textarea id="source">{{ page.content }}</textarea>
+    <script
+      src="{{ site.baseurl | strip_html }}/theme/js/remark.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      var slideshow = remark.create({
+        navigation: { scroll: false },
+        highlightStyle: "monokai",
+        countIncrementalSlides: false,
+      })
+    </script>
+  </body>
+</html>

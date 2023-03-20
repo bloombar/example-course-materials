@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% seo %}
+
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl | strip_html }}/theme/css/github.css"
+    />
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+    <!-- Setup Google Analytics -->
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ site.baseurl | strip_html }}/theme/favicon.ico"
+    />
+
+    <!-- end custom head snippets -->
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      <header>
+        <small>
+          <a href="{{ site.baseurl | strip_html }}/">
+            <!-- {{ site.github-org-name }} -->
+            {{ site.github-repo-name | strip_html }}
+          </a>
+
+          {% if page.collection != "" and page.collection != nil %} /
+          <a
+            href="{{ site.baseurl | strip_html }}/{{ page.collection | downcase | strip_html }}"
+          >
+            {{ page.collection | downcase | strip_html }}
+          </a>
+          {% else %} {% for category in page.categories %} /
+          <a
+            href="{{ site.baseurl | strip_html }}/{{ category | downcase | strip_html }}"
+          >
+            {{ category | downcase | strip_html }}
+          </a>
+          {% unless forloop.last %} {% endunless %} {% endfor %} {% endif %}
+        </small>
+      </header>
+
+      <main>
+        <h1>{{ page.title}}</h1>
+
+        {% if page.date and page.date != "" and page.date != nil %}
+        <p>
+          {% if page.author and page.author != "" and page.author != nil %}
+          <small>{{ page.author }}<br /></small>
+          {% endif %} {% if page.date and page.date != "" and page.date != nil
+          %}
+          <small> <time>{{ page.date | date: "%A, %d %B %Y" }}</time>. </small>
+          {% endif %}
+        </p>
+        {% endif %} {{ content | markdownify }}
+      </main>
+
+      <footer>
+        <h2 id="copyright">Copyright</h2>
+
+        <p>
+          All content herein is copyrighted, shared under the
+          <a
+            href="https://github.com/{{ site.github-org-name }}/{{ site.github-repo-name }}/blob/main/LICENSE"
+            >{{ site.copyright }}</a
+          >.
+        </p>
+
+        <div
+          class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray"
+        >
+          Help
+          <a
+            href="https://github.com/{{ site.github-org-name }}/{{ site.github-repo-name }}/blob/main/{{ page.path | strip_html }}"
+            >improve this page </a
+          >.
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+      integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      anchors.add()
+    </script>
+  </body>
+</html>
