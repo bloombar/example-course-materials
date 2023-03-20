@@ -218,7 +218,11 @@ GitHub also includes a feature called **[Classroom](https://classroom.github.com
 
 --
 
-- Assignments can be generated from any GitHub repository. The instructor can include any starter files, instructions (written in Markdown), etc, in their original copy of the repository.
+- Assignments can be generated from any GitHub repository.
+
+--
+
+- The instructor can include any starter files, e.g. instructions written in Markdown, in their original copy of the repository.
 
 --
 
