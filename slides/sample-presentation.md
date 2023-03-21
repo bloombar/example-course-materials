@@ -30,23 +30,27 @@ name: overview
 
 ## Concept
 
-This presentation includes notes on how this example course website, including these slides, was created.
+This presentation includes notes on how this example course website, including these slides, was created using standard software development tools.
 
 --
 
-- The contents are entirely written in [Markdown](#markdown) and stored on [GitHub](#github).
+- The contents are entirely written in [Markdown](#markdown).
 
 --
 
-- The contents of this presentation are stored in the file named `slides`/`sample-presentation.md`.
+- These files are stored on [GitHub](#github).
 
 --
 
-- In fact, any Markdown file placed within the `slides` directory will automatically be converted into a presentation.
+- [GitHub Pages](#github-pages) automatically publishes the Markdown documents as a web site.
 
 --
 
-- Markdown documents placed outside of the `slides` directory will be displayed as regular web pages, e.g. the example [course schedule](../../) and [syllabus](../../syllabus/).
+- [Remark.js](#remarkjs) automatically converts some of those Markdown documents into slide presentations, like this one.
+
+--
+
+- The same tools used to create the course website can be used by students to complete their assignments using [GitHub Classroom](#github-classroom)
 
 ---
 
@@ -60,7 +64,7 @@ name: markdown
 
 Markdown is a simple text-based markup language that anyone can master.
 
-- **widely-used** for writing documentation
+- **widely-used** in the software world
 - supported by a wide variety of software tools
 - **easy** to learn
 - easy to read
@@ -206,6 +210,18 @@ Once enabled, the site will be published and republished automatically every tim
 
 ---
 
+template: github-pages
+
+## Jekyll
+
+Behind the scenes, GitHub Pages uses an open-source program called [Jekyll](https://jekyllrb.com) to convert the Markdown files into HTML.
+
+--
+
+- You really don't even need to know that Jekyll exists in order to use it.
+
+---
+
 name: github-classroom
 
 # GitHub Classroom
@@ -256,11 +272,11 @@ name: conclusions
 
 ## Extensibility
 
-This type of course materials setup is just the beginning.
+This type of course materials setup is just the beginning. There are many additional tools and features that can be integrated into the setup outlined in this presentation.
 
-- There are many additional tools and features that can be integrated into the setup outlined in this presentation.
+- For example, [GitHub Actions](https://github.com/marketplace?type=actions) can be used to automatically run any program when an instructor or student changes their repository files, e.g. auto-grading or sending confirmation emails to students.
 
-- For example, [GitHub Actions](https://github.com/marketplace?type=actions) can be used to automatically run any program when a student changes their repository files, such as auto-grading it or logging their changes into a spreadsheet.
+- You can publish your course materials to your own custom domain name (i.e. web address), rather than GitHub's default `github.io` domain.
 
 - And you can, of course, customize the appearance of the slides and course materials by modifying the files in the `theme` directory.
 
