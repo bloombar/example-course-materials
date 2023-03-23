@@ -158,7 +158,7 @@ At its core, [GitHub](https://github.com), is a file sharing service owned by Mi
 
 --
 
-- share and collaborete on files with others
+- share and collaborate on files with others
 
 --
 
